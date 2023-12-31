@@ -1,0 +1,78 @@
+.feedback{
+    position: relative;
+    background: black;
+    align-items: center;
+    display:flex;
+}
+.main-content{
+    width: 1170px;
+    max-width: calc(100%-48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.feedback-list{
+    display: flex;
+    overflow: hidden ;
+}
+.feedback-item{
+    display: flex;
+    margin-left:15%;
+    flex-shrink: 0;
+
+}
+.feedback-item .avatar{
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left:25%;
+}
+.feedback-item .info .member-name{
+    margin-top: 10px;
+    margin-right:-50px;
+    color:#f7f7f7;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.42;
+    align-items:center;
+
+}
+
+.feedback-item .info .desc{
+    margin-top: 4px;
+    margin-right:-50%;
+    color:#bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.49;
+}
+.feedback-item .dots{
+    gap: 6px;
+    display: flex;
+    margin-top: 23px;
+    margin-bottom:25px;
+    margin-left:30%
+}
+.feedback-item .dot{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #9D8161;
+    margin-bottom:45px;
+
+
+}
+.feedback-item .dot.active{
+    background:#614e38;
+    cursor: default;
+}
+.feedback-item .content{
+    width: 66%;
+    margin-left:auto;
+}
+.feedback-item blockquote{
+    color:#fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
+    
+}
