@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>complete responsive hotel booking website design tutorial</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="booking.css">
+   <script
+   type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+ ></script>
+   <script type="text/javascript">
+      (function () {
+      emailjs.init("sTJBf1cLtN6DrKT2d");
+      })();
+   </script>
+
+</head>
+<body>
+    <section class="reservation" id="reservation">
+
+        <form action="" method="post">
+           <h3>Make a reservation</h3>
+           <div class="flex">
+              <div class="box">
+                 <p>Name <span>*</span></p>
+                 <input type="text" id="name" name="name" class="input" required>
+               </div>
+              <div class="box">
+                 <p>Phone Number <span>*</span></p>
+                 <input type="tel" name="phone_number" class="input" required>
+              </div>
+              <div class="box">
+                 <p>Adults <span>*</span></p>
+                 <select name="adults" class="input" required>
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                    <option value="5">5 adults</option>
+                    <option value="6">6 adults</option>
+                 </select>
+              </div>
+              <div class="box">
+                 <p>Childs <span>*</span></p>
+                 <select name="childs" class="input" required>
+                    <option value="-">0 child</option>
+                    <option value="1">1 child</option>
+                    <option value="2">2 childs</option>
+                    <option value="3">3 childs</option>
+                    <option value="4">4 childs</option>
+                    <option value="5">5 childs</option>
+                    <option value="6">6 childs</option>
+                 </select>
+              </div>
+              <div class="box">
+                 <p>Rooms <span>*</span></p>
+                 <select name="rooms" class="input" required>
+                    <option value="1">1 room</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                    <option value="4">4 rooms</option>
+                    <option value="5">5 rooms</option>
+                    <option value="6">6 rooms</option>
+                 </select>
+              </div>
+           </div>
+           <input type="submit" value="check availability" name="check" class="btn" onclick="sendReservation(event)">
+         </form>
+
+     </section>
+     <script src="booking.js"></script>
+   </body>
+</html>
